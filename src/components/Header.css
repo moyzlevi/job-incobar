@@ -1,0 +1,26 @@
+.header{
+    padding: 10px;
+    background-color: #50423f;   
+    display: flex;
+    flex-direction: row;
+}
+
+
+.header__title{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__title--main{
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.header__title--sub{
+    color: rgb(144, 142, 142);
+    font-size: 2rem;
+}

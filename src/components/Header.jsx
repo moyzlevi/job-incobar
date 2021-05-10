@@ -4,9 +4,13 @@ import "bootstrap/dist/css/bootstrap.css";
 import logomarca from '../../static/img/logomarca.jpg'
 
 function Header() {
-    return (<>
+    return (<div className="header">
        <img src={logomarca} alt="logo"/>
-    </>)
+        <div className="header__title">
+            <h2 className="header__title--sub">Incobor Ind. Com. de Borrachas</h2>
+            <h1 className="header__title--main">Plano de Produção</h1>
+        </div>
+    </div>)
 }
 
 export default Header
