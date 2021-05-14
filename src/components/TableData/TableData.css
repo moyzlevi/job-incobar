@@ -1,6 +1,6 @@
 .TableData{
     display: grid;
-    grid-template-columns: 1fr 3fr repeat(4,1fr);
+    grid-template-columns: 1fr 3fr repeat(5,1fr);
     grid-column-gap: .0rem;
     
     

@@ -28,6 +28,7 @@ export default class TableData extends Component{
         <div className="TableData__head">Un.</div>
         <div className="TableData__head">Qtd.</div>
         <div className="TableData__head">Qtd Prod.</div>
+        <div className="TableData__head">Temp. Previsto</div>
         <div className="TableData__head">Saldo</div>
       </div>
       <hr className="horizontalRule" />
