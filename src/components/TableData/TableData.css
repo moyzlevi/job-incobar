@@ -1,12 +1,13 @@
 .TableData{
     display: grid;
     grid-template-columns: 1fr 3fr repeat(4,1fr);
-    grid-column-gap: .2rem;
+    grid-column-gap: .0rem;
+    
     
 }
 
 .TableData > div{
-    background-color: blue;
+    background-color: #95a5a6;   
     min-width: 10.5rem;
 }
 
@@ -16,4 +17,15 @@ text-align: center;
 
 .TableData__head--produto{
     text-align: center;
+}
+
+.horizontalRule{
+    margin-top: 0;
+}
+
+
+.dataTable{
+    border-style: solid;
+    border-width: .3rem 0rem 0rem 0rem;
+    border-color: #bdc3c7;
 }

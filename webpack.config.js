@@ -12,6 +12,7 @@ module.exports = {
     port: 3000,
     watchContentBase: true,
     open: true,
+    hot:true
   },
   // Rules of how webpack will take our files, complie & bundle them for the browser
   module: {
@@ -42,7 +43,7 @@ module.exports = {
       favicon: "./static/favicon.ico",
     }),
   ],
-
+target:"web",
   resolve: {
     extensions: ["", ".js", ".jsx"],
   },

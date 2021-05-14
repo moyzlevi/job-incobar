@@ -1,16 +1,29 @@
-.Register{
-    display: grid;
-    grid-template-columns: 1fr 3fr repeat(4,1fr);
-    grid-column-gap: .2rem;
-    border: .2rem solid rgb(184, 166, 166);
-    
+.Register {
+  display: grid;
+  grid-template-columns: 1fr 3fr repeat(4, 1fr);
+  align-items: center;
+  overflow: hidden;
 }
 
-.Register > div{
-    background-color: red;
-    min-width: 10.5rem;
+
+
+.Register > div {
+  border-style: solid;
+  border-width: 0rem .3rem .3rem 0rem; 
+  border-color: #bdc3c7;
+  min-width: 10.5rem;
+  max-height: 3.3rem;
+  
 }
 
-.big-cell{
+.firstCol{
+  border-style: solid;
+  border-width: 0rem .3rem .3rem .3rem !important; 
+  border-color: #bdc3c7;
+  
+}
+
+.big-cell {
     overflow: hidden;
+  
 }
