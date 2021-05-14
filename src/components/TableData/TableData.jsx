@@ -1,11 +1,27 @@
-import React from "react";
+import React, {Component} from "react";
 import "./TableData.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Register from "../Register/Register";
 
-function TableData(props) {
-  return (
-    <div>
+import getData from "./service.js";
+
+export default class TableData extends Component{
+  constructor(props){
+    super(props);
+    this.state = {list:[]}
+    this.refresh();
+  }
+
+  refresh(){
+    console.log('refresh')
+    const array  = getData();
+    console.log(array[0]);
+    //
+  }
+
+  render(){
+    return(
+      <div>
       <div className="TableData text-font-medium center-text">
         <div className="TableData__head--data ">Data</div>
         <div className="TableData__head--produto">Produto</div>
@@ -43,7 +59,6 @@ function TableData(props) {
         
       </div>
     </div>
-  );
+    )
+  }
 }
-
-export default TableData;

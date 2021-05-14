@@ -1,0 +1,34 @@
+{
+    "operations":[
+        {
+            "operationId":1,
+            "productId":1234,
+            "name":"lamina de barbear",
+            "unit":"PC",
+            "quantity":50,
+            "productQuantity":100,
+            "balance":100.99,
+            "priority":0
+            
+        },
+        {
+            "operationId":2,
+            "productId":9999,
+            "name":"tijolo muito firme",
+            "unit":"combo Tijolos",
+            "quantity":12,
+            "productQuantity":10,
+            "balance":70.00,
+            "priority":1
+        },{
+            "operationId":3,
+            "productId":456,
+            "name":"borracha mole",
+            "unit":"dezenas",
+            "quantity":24,
+            "productQuantity":8,
+            "balance":40.00,
+            "priority":0
+        }
+    ]
+}
