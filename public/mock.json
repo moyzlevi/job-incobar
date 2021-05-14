@@ -45,7 +45,7 @@
             "productQuantity":8,
             "balance":40.00,
             "tempo":"01:00",
-            "priority":1
+            "priority":0
         }
     ]
 }
