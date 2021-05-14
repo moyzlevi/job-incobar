@@ -1,7 +1,7 @@
 import React from "react"
 import './Header.css'
 import "bootstrap/dist/css/bootstrap.css";
-import logomarca from '../../static/img/logomarca.jpg'
+import logomarca from '../../../static/img/logomarca.jpg'
 import {Alert} from 'react-bootstrap'
 
 function Header(props) {

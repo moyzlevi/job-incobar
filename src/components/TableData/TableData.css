@@ -1,0 +1,8 @@
+.TableData{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.TableData__head{
+    font-size: 2rem;
+}
