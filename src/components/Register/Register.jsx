@@ -6,14 +6,13 @@ import "bootstrap/dist/css/bootstrap.css";
 
 function Register(props) {
     return (
-    <div className="register">
+    <div className="Register text-font-medium">
        <div>10/05/2021</div>
-       <div>11809</div>
-       <div>Barbeador mega forte</div>
+       <div>11809{" "}Barbeador mega fortes</div>
        <div>Pc</div>
        <div>120</div>
        <div>600</div>
-       <div>saldo</div>
+       <div>1000,00</div>
     </div>)
 }
 
