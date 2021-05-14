@@ -4,11 +4,12 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import {Button} from 'react-bootstrap'
 import Header from './components/Header'
+import Title from './components/Title'
 
 function App() {
     return (<div>
-       <Header/>
-       <Button>Hello World</Button>
+       <Header dataIni="10/05/2021" dataFim="10/05/2021"/>
+       <Title/>
     </div>)
 }
 

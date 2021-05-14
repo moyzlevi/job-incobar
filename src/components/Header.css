@@ -3,6 +3,7 @@
     background-color: #50423f;   
     display: flex;
     flex-direction: row;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -18,9 +19,26 @@
     color: #fff;
     font-size: 3rem;
     text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #0000004d;
 }
 
 .header__title--sub{
-    color: rgb(144, 142, 142);
+    color: #171a1b;
+    font-size: 1.4rem;
+}
+
+.header__emissao{
+    margin-top: 1rem;
     font-size: 2rem;
+    border-radius: 0rem;
+    line-height: 1rem;
+    background-color: #869094;
+    color: #171a1b;
+    border-color: #2d3436;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 1rem;
+   
 }
