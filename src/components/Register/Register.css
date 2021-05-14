@@ -27,3 +27,11 @@
     overflow: hidden;
   
 }
+
+.alta{
+  background-color: #e74c3c;
+}
+
+.baixa{
+  background-color: #2ecc71;
+}

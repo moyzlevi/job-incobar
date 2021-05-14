@@ -9,14 +9,23 @@ export default class TableData extends Component{
   constructor(props){
     super(props);
     this.state = {list:[]}
+    // this.refresh.bind = this.refresh.bind(this);
+  }
+  
+  async componentDidMount(){
     this.refresh();
+  }
+  
+  printState(){
+    let myState = this.state.list
+    console.log(myState);
   }
 
   refresh(){
-    console.log('refresh')
-    const array  = getData();
-    console.log(array[0]);
-    //
+    let data = getData().operations;
+    this.setState({
+      list: data
+    })
   }
 
   render(){
@@ -33,31 +42,14 @@ export default class TableData extends Component{
       </div>
       <hr className="horizontalRule" />
       <div className="dataTable">
-        <Register
-          data="10/05/2021"
-          produto="1234 Barbeador mega forte"
-          unidade="Pc"
-          quantidade="50"
-          quantidadeProduto="100"
-          saldo="R$100,00"
-        />
-        <Register
-          data="10/05/2021"
-          produto="1234 Barbeador mega forte loremmmmmmmmmmmm"
-          unidade="Pc"
-          quantidade="50"
-          quantidadeProduto="100"
-          saldo="R$100,00"
-        />
-         <Register
-          data="10/05/2021"
-          produto="1234 Barbeador mega forte loremmmmmmmmmmmm"
-          unidade="Pc"
-          quantidade="50"
-          quantidadeProduto="100"
-          saldo="R$100,00"
-        />
-        
+        {this.state.list.map((op)=>{
+          return(
+            <Register data={op.data} produto={op.productId+" "+op.name} unidade={op.unit}
+            quantidade={op.quantity} quantidadeProduto={op.productQuantity} tempo={op.tempo}
+            saldo={op.balance} prioridade={op.priority}
+            />
+          )
+        })}
       </div>
     </div>
     )
