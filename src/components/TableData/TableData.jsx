@@ -42,7 +42,7 @@ export default class TableData extends Component{
       </div>
       <hr className="horizontalRule" />
       <div className="dataTable">
-        {this.state.list.map((op)=>{
+        {this.state.list.sort(function(a,b){return (a.priority - b.priority)*-1}).map((op)=>{
           return(
             <Register data={op.data} produto={op.productId+" "+op.name} unidade={op.unit}
             quantidade={op.quantity} quantidadeProduto={op.productQuantity} tempo={op.tempo}
