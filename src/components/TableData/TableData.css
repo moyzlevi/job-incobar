@@ -1,10 +1,19 @@
 .TableData{
     display: grid;
     grid-template-columns: 1fr 3fr repeat(4,1fr);
-    grid-column-gap: 10rem;
+    grid-column-gap: .2rem;
     
+}
+
+.TableData > div{
+    background-color: blue;
+    min-width: 10.5rem;
 }
 
 .TableData__head--data{
 text-align: center;
+}
+
+.TableData__head--produto{
+    text-align: center;
 }

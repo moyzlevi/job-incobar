@@ -1,7 +1,16 @@
 .Register{
     display: grid;
     grid-template-columns: 1fr 3fr repeat(4,1fr);
-    grid-column-gap: 10rem;
+    grid-column-gap: .2rem;
     border: .2rem solid rgb(184, 166, 166);
+    
 }
 
+.Register > div{
+    background-color: red;
+    min-width: 10.5rem;
+}
+
+.big-cell{
+    overflow: hidden;
+}

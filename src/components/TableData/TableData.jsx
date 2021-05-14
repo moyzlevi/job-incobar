@@ -7,8 +7,8 @@ import Register from '../Register/Register'
 function TableData(props) {
     return (
     <>
-    <div className="TableData text-font-medium">
-       <div className="TableData__head--data">Data</div>
+    <div className="TableData text-font-medium center-text">
+       <div className="TableData__head--data ">Data</div>
        <div className="TableData__head--produto">Produto</div>
        <div className="TableData__head">Un.</div>
        <div className="TableData__head">Qtd.</div>
