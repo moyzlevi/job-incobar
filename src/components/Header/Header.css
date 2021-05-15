@@ -1,6 +1,6 @@
 .header{
     padding: 10px;
-    background-color: #50423f;   
+    background-color: #864000;   
     display: flex;
     flex-direction: row;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -16,7 +16,7 @@
 }
 
 .header__title--main{
-    color: #fff;
+    color: #ffefcf;
     font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
@@ -26,7 +26,7 @@
 }
 
 .header__title--sub{
-    color: #fff;
+    color: #ffefcf;
     font-size: 1.4rem;
 }
 
@@ -35,7 +35,7 @@
     font-size: 2rem;
     border-radius: 0rem;
     line-height: 1rem;
-    background-color: #869094;
+    background-color: #ffefcf;
     color: #171a1b;
     border-color: #2d3436;
     font-family: 'Open Sans', sans-serif;

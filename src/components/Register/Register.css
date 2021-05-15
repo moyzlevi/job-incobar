@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 3fr repeat(5, 1fr);
   align-items: center;
   overflow: hidden;
+  color: #212121;
 }
 
 
@@ -10,7 +11,7 @@
 .Register > div {
   border-style: solid;
   border-width: 0rem .3rem .3rem 0rem; 
-  border-color: #bdc3c7;
+  border-color: #BDBDBD;
   min-width: 10.5rem;
   max-height: 3.3rem;
   
@@ -19,7 +20,7 @@
 .firstCol{
   border-style: solid;
   border-width: 0rem .3rem .3rem .3rem !important; 
-  border-color: #bdc3c7;
+  border-color: #757575;
   
 }
 
@@ -29,9 +30,9 @@
 }
 
 .alta{
-  background-color: #e74c3c;
+  background-color: #FF5252;
 }
 
 .baixa{
-  background-color: #2ecc71;
+  background-color: #4CAF50;
 }
