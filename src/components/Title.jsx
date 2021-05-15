@@ -6,7 +6,6 @@ function Title(props) {
   return (
     <div>
       <h1 className="title">Rebarbação</h1>
-      <hr/>
     </div>
   );
 }
