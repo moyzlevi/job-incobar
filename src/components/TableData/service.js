@@ -1,13 +1,21 @@
-const today = new Date();
+const fetch = require("node-fetch");
+import mockData from '../../../public/mock.json'
 
-export default function actualDate(format) {
-  const map = {
-      mm: today.getMonth() + 1,
-      dd: today.getDate(),
-      yy: today.getFullYear().toString().slice(-2),
-      yyyy: today.getFullYear()
-  }
+const getData = () => {
+  // var array = [];
+  //   fetch('../../../public/mock.json', {
+  //   headers: { "Content-Type": "application/json", "Accept": "application/json" },
+  // })
+  //   .then((res) => {
+  //     console.log(res);
+  //     return res.json();
+  //   }).then((json)=>{
+  //     array =  JSON.stringify(json).operations;
+  //     console.log("salvei:"+array);
+  //   });
+    
+    return mockData;
+   
+};
 
-  return format.replace(/mm|dd|yy|yyy/gi, matched => map[matched])
-}
-
+export default getData;

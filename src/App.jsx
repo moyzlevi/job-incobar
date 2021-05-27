@@ -8,9 +8,9 @@ import Title from './components/Title'
 import TableData from './components/TableData/TableData'
 
 function App() {
-    let today = service('dd/mm/yy')
+    
     return (<div>
-       <Header dataIni={today} dataFim={today}/>
+       <Header dataIni={''} dataFim={''}/>
        <Title/>
        <TableData/>
     </div>)
