@@ -44,7 +44,8 @@ export default class TableData extends Component {
         <div className="dataTable">
           {this.state.list
             .sort(function (a, b) {
-              return (a.priority - b.priority) * -1;
+            
+              return (a.priority - b.priority) * -1 ||(a.sequencia - b.sequencia);
             })
             .map((op) => {
               return (
