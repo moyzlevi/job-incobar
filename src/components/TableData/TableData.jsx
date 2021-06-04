@@ -13,8 +13,13 @@ export default class TableData extends Component {
   }
 
   async componentDidMount() {
+    this.interval = setInterval(() => this.refresh(), 60000);
     this.refresh();
   }
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+  
 
   printState() {
     let myState = this.state.list;

@@ -1,5 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   // Where files should be sent once they are bundled
@@ -12,7 +14,7 @@ module.exports = {
     port: 3000,
     watchContentBase: true,
     open: true,
-    hot:true
+    hot: true,
   },
   // Rules of how webpack will take our files, complie & bundle them for the browser
   module: {
@@ -43,7 +45,7 @@ module.exports = {
       favicon: "./static/favicon.ico",
     }),
   ],
-target:"web",
+  target: "web",
   resolve: {
     extensions: ["", ".js", ".jsx"],
   },

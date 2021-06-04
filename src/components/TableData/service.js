@@ -3,6 +3,7 @@ import getURL from "../../../config.json"
 const getData = () => {
     const URL = getURL.endpoints.get;
     let answer;
+    console.log('Refresh...');
   fetch(URL)
     .then((data) => {
       return data.json();

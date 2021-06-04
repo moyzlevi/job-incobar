@@ -10,7 +10,7 @@ function Header(props) {
         <div className="header__title">
             <h2 className="header__title--sub">Incobor Ind. Com. de Borrachas</h2>
             <h1 className="header__title--main">Plano de Produção</h1>
-            <Alert variant="dark" className="header__emissao">Emitido {props.dataIni} - {props.dataFim}</Alert>
+            <Alert variant="dark" className="header__emissao">{props.dataIni} - {props.dataFim}</Alert>
         </div>
     </div>)
 }
