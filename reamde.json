@@ -1,0 +1,79 @@
+{
+  "operations": [
+    {
+      "operationId": 1,
+      "data": "10/05/2021",
+      "productId": 1234,
+      "name": "lamina de barbear sq4",
+      "unit": "PC",
+      "quantity": 50,
+      "productQuantity": 100,
+      "balance": 100.99,
+      "tempo": "01:00",
+      "priority": 0,
+      "sequencia":4
+    },{
+      "operationId": 1,
+      "data": "10/05/2021",
+      "productId": 1234,
+      "name": "lamina de barbear sq2",
+      "unit": "PC",
+      "quantity": 50,
+      "productQuantity": 100,
+      "balance": 100.99,
+      "tempo": "01:00",
+      "priority": 0,
+      "sequencia":2
+    },
+    {
+      "operationId": 2,
+      "data": "12/05/2021",
+      "productId": 9999,
+      "name": "tijolo muito firme seq3",
+      "unit": "combo Tijolos",
+      "quantity": 12,
+      "productQuantity": 10,
+      "balance": 70.0,
+      "tempo": "01:00",
+      "priority": 1,
+      "sequencia":3
+    },{
+      "operationId": 2,
+      "data": "12/05/2021",
+      "productId": 9999,
+      "name": "tijolo muito firme seq2",
+      "unit": "combo Tijolos",
+      "quantity": 12,
+      "productQuantity": 10,
+      "balance": 70.0,
+      "tempo": "01:00",
+      "priority": 1,
+      "sequencia":2
+    },
+    {
+      "operationId": 3,
+      "data": "12/01/1999",
+      "productId": 456,
+      "name": "borracha mole seq4",
+      "unit": "dezenas",
+      "quantity": 24,
+      "productQuantity": 8,
+      "balance": 40.0,
+      "tempo": "01:00",
+      "priority": 0,
+      "sequencia":4
+    },
+    {
+      "operationId": 3,
+      "data": "12/01/1999",
+      "productId": 456,
+      "name": "borracha mole seq8",
+      "unit": "dezenas",
+      "quantity": 24,
+      "productQuantity": 8,
+      "balance": 40.0,
+      "tempo": "01:00",
+      "sequencia":8
+    }
+  ]
+}
