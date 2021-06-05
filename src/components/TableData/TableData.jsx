@@ -20,7 +20,7 @@ export default class TableData extends Component {
    componentDidMount() {
     this._isMounted = true;
     this.fetchUsers();
-    this.timer = setInterval(() => this.fetchUsers(), 5000);
+    this.timer = setInterval(() => this.fetchUsers(), 60000);
   }
 
   fetchUsers() {
@@ -55,7 +55,7 @@ export default class TableData extends Component {
     return (
       <div>
         <div className="TableData text-font-medium center-text">
-          <div className="TableData__head--data ">Data</div>
+          <div className="TableData__head--data ">Data {this.state.isFetching ?<Spinner className="spin" animation="border" />:""}</div>
           <div className="TableData__head--produto">Produto</div>
           <div className="TableData__head">Un.</div>
           <div className="TableData__head">Qtd.</div>
@@ -65,12 +65,7 @@ export default class TableData extends Component {
         </div>
 
         <div className="dataTable">
-          {this.state.isFetching ? (
-            <div className="spindiv">
-              <Spinner className="spin" animation="border" />
-            </div>
-          ) : (
-            this.state.list
+          {  this.state.list
               .sort(function (a, b) {
                 return (
                   (a.priority - b.priority) * -1 || a.sequencia - b.sequencia
@@ -90,7 +85,7 @@ export default class TableData extends Component {
                   />
                 );
               })
-          )}
+          }
         </div>
       </div>
     );
