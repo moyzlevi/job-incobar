@@ -28,7 +28,6 @@ export default class TableData extends Component {
     axios
       .get(URL)
       .then((response) => {
-        console.log("Responser",response.data[0].operations)
         this.setState({ list: response.data[0].operations, isFetching: false });
       })
       .catch((e) => {
@@ -43,6 +42,10 @@ export default class TableData extends Component {
     clearInterval(this.timer);
     this.timer = null;
 
+    //warning fix
+    this.setState = (state,callback)=>{
+      return;
+  };
 
   }
 
@@ -71,9 +74,10 @@ export default class TableData extends Component {
                   (a.priority - b.priority) * -1 || a.sequencia - b.sequencia
                 );
               })
-              .map((op) => {
+              .map((op,i) => {
                 return (
                   <Register
+                  key={i}
                     data={op.data}
                     produto={op.productId + " " + op.name}
                     unidade={op.unit}
