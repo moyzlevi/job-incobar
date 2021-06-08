@@ -60,10 +60,10 @@ export default class TableData extends Component {
         <div className="TableData text-font-medium center-text">
           <div className="TableData__head--data ">Data {this.state.isFetching ?<Spinner className="spin" animation="border" />:""}</div>
           <div className="TableData__head--produto">Produto</div>
-          <div className="TableData__head">Un.</div>
           <div className="TableData__head">Qtd.</div>
+          <div className="TableData__head">Temp. Prev.</div>
           <div className="TableData__head">Qtd Prod.</div>
-          <div className="TableData__head tempo">Temp. Previsto</div>
+          <div className="TableData__head tempo">Temp. Prod.</div>
           <div className="TableData__head">Saldo</div>
         </div>
 
@@ -80,9 +80,9 @@ export default class TableData extends Component {
                   key={i}
                     data={op.data}
                     produto={op.productId + " " + op.name}
-                    unidade={op.unit}
-                    quantidade={op.quantity}
-                    quantidadeProduto={op.productQuantity}
+                    qtd={op.quantity}
+                    tempPrev={op.tmpPrev}
+                    productQuantity={op.productQuantity}
                     tempo={op.tempo}
                     saldo={op.balance}
                     prioridade={op.priority}

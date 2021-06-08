@@ -11,7 +11,7 @@ import { actualDate } from "./util";
 function App() {
     
     return (<div>
-       <Header dataIni={actualDate()} dataFim={actualDate()}/>
+       <Header dataIni={actualDate()}/>
        <Title/>
        <TableData/>
     </div>)
